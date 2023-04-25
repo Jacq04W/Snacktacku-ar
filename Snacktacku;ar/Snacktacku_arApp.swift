@@ -6,12 +6,32 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCore
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+    return true
+  }
+}
+
 
 @main
 struct Snacktacku_arApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+//    Firebase.configure()
+    init(){
+        FirebaseApp.configure()
+    }
+    
+@StateObject var spotVm = SpotViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
+                .environmentObject(SpotViewModel())
+                 
         }
     }
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>706585741075-l4i7kce960tj2egt7dki09sbs52n07n3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.706585741075-l4i7kce960tj2egt7dki09sbs52n07n3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCZkd5Gt9TiAhYrHI2Rlwm6eP__AY8cqUY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>706585741075</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.TheMob.Snacktacku-ar</string>
+	<key>PROJECT_ID</key>
+	<string>snacktackula</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snacktackula.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:706585741075:ios:925a114c925b9b5737bce6</string>
+</dict>
+</plist>

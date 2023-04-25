@@ -14,6 +14,16 @@
 		093DF77C29F6CF2A00396641 /* Snacktacku_arTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DF77B29F6CF2A00396641 /* Snacktacku_arTests.swift */; };
 		093DF78629F6CF2A00396641 /* Snacktacku_arUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DF78529F6CF2A00396641 /* Snacktacku_arUITests.swift */; };
 		093DF78829F6CF2A00396641 /* Snacktacku_arUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DF78729F6CF2A00396641 /* Snacktacku_arUITestsLaunchTests.swift */; };
+		093DF79929F6DC7600396641 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 093DF79829F6DC7600396641 /* FirebaseAuth */; };
+		093DF79B29F6DC7600396641 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 093DF79A29F6DC7600396641 /* FirebaseDatabase */; };
+		093DF79D29F6DC7600396641 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 093DF79C29F6DC7600396641 /* FirebaseFirestore */; };
+		093DF79F29F6DC7600396641 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 093DF79E29F6DC7600396641 /* FirebaseFirestoreSwift */; };
+		093DF7A129F6DC7600396641 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 093DF7A029F6DC7600396641 /* FirebaseStorage */; };
+		093DF7A329F6DDE700396641 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 093DF7A229F6DDE700396641 /* GoogleService-Info.plist */; };
+		093DF7A729F7603400396641 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DF7A629F7603400396641 /* ListView.swift */; };
+		093DF7A929F7A99B00396641 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DF7A829F7A99B00396641 /* Spot.swift */; };
+		093DF7AB29F7AC3000396641 /* SpotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DF7AA29F7AC3000396641 /* SpotDetailView.swift */; };
+		093DF7AF29F7B02200396641 /* SpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DF7AE29F7B02200396641 /* SpotViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,12 @@
 		093DF78129F6CF2A00396641 /* Snacktacku;arUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Snacktacku;arUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		093DF78529F6CF2A00396641 /* Snacktacku_arUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snacktacku_arUITests.swift; sourceTree = "<group>"; };
 		093DF78729F6CF2A00396641 /* Snacktacku_arUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snacktacku_arUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		093DF79629F6D54800396641 /* Snacktacku-ar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Snacktacku-ar-Info.plist"; sourceTree = SOURCE_ROOT; };
+		093DF7A229F6DDE700396641 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		093DF7A629F7603400396641 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		093DF7A829F7A99B00396641 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		093DF7AA29F7AC3000396641 /* SpotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailView.swift; sourceTree = "<group>"; };
+		093DF7AE29F7B02200396641 /* SpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093DF79B29F6DC7600396641 /* FirebaseDatabase in Frameworks */,
+				093DF79929F6DC7600396641 /* FirebaseAuth in Frameworks */,
+				093DF79D29F6DC7600396641 /* FirebaseFirestore in Frameworks */,
+				093DF7A129F6DC7600396641 /* FirebaseStorage in Frameworks */,
+				093DF79F29F6DC7600396641 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +95,10 @@
 		093DF75E29F6CF2900396641 = {
 			isa = PBXGroup;
 			children = (
+				093DF7AE29F7B02200396641 /* SpotViewModel.swift */,
+				093DF7A829F7A99B00396641 /* Spot.swift */,
+				093DF7AA29F7AC3000396641 /* SpotDetailView.swift */,
+				093DF7A629F7603400396641 /* ListView.swift */,
 				093DF76929F6CF2900396641 /* Snacktacku;ar */,
 				093DF77A29F6CF2A00396641 /* Snacktacku;arTests */,
 				093DF78429F6CF2A00396641 /* Snacktacku;arUITests */,
@@ -94,6 +119,8 @@
 		093DF76929F6CF2900396641 /* Snacktacku;ar */ = {
 			isa = PBXGroup;
 			children = (
+				093DF7A229F6DDE700396641 /* GoogleService-Info.plist */,
+				093DF79629F6D54800396641 /* Snacktacku-ar-Info.plist */,
 				093DF76A29F6CF2900396641 /* Snacktacku_arApp.swift */,
 				093DF76C29F6CF2900396641 /* ContentView.swift */,
 				093DF76E29F6CF2A00396641 /* Assets.xcassets */,
@@ -143,6 +170,13 @@
 			dependencies = (
 			);
 			name = "Snacktacku;ar";
+			packageProductDependencies = (
+				093DF79829F6DC7600396641 /* FirebaseAuth */,
+				093DF79A29F6DC7600396641 /* FirebaseDatabase */,
+				093DF79C29F6DC7600396641 /* FirebaseFirestore */,
+				093DF79E29F6DC7600396641 /* FirebaseFirestoreSwift */,
+				093DF7A029F6DC7600396641 /* FirebaseStorage */,
+			);
 			productName = "Snacktacku;ar";
 			productReference = 093DF76729F6CF2900396641 /* Snacktacku;ar.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +249,9 @@
 				Base,
 			);
 			mainGroup = 093DF75E29F6CF2900396641;
+			packageReferences = (
+				093DF79729F6DC7600396641 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 093DF76829F6CF2900396641 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093DF7A329F6DDE700396641 /* GoogleService-Info.plist in Resources */,
 				093DF77229F6CF2A00396641 /* Preview Assets.xcassets in Resources */,
 				093DF76F29F6CF2A00396641 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093DF7AB29F7AC3000396641 /* SpotDetailView.swift in Sources */,
 				093DF76D29F6CF2900396641 /* ContentView.swift in Sources */,
+				093DF7AF29F7B02200396641 /* SpotViewModel.swift in Sources */,
 				093DF76B29F6CF2900396641 /* Snacktacku_arApp.swift in Sources */,
+				093DF7A729F7603400396641 /* ListView.swift in Sources */,
+				093DF7A929F7A99B00396641 /* Spot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +462,9 @@
 				DEVELOPMENT_TEAM = Q883HJGNY5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snacktacku-ar-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,9 +491,9 @@
 				DEVELOPMENT_TEAM = Q883HJGNY5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snacktacku-ar-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,6 +625,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		093DF79729F6DC7600396641 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		093DF79829F6DC7600396641 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093DF79729F6DC7600396641 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		093DF79A29F6DC7600396641 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093DF79729F6DC7600396641 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		093DF79C29F6DC7600396641 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093DF79729F6DC7600396641 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		093DF79E29F6DC7600396641 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093DF79729F6DC7600396641 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		093DF7A029F6DC7600396641 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 093DF79729F6DC7600396641 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 093DF75F29F6CF2900396641 /* Project object */;
 }
