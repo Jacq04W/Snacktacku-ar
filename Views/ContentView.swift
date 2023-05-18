@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 import FirebaseAuth
 import FirebaseCore
 struct LoginView: View {
@@ -14,8 +13,8 @@ struct LoginView: View {
     @State private var password = ""
     @State private var showingAlert = false
     @State private var alertMessage = ""
+    @State private var presentSheet = false
     @State private var buttonsDisabled = false
-    @State private var path = NavigationPath()
     @FocusState private var focusFiel : Field?
 
     
@@ -25,7 +24,7 @@ struct LoginView: View {
     }
     @FocusState private var focusField: Field?
     var body: some View {
-        NavigationStack(path:$path){
+        VStack{
             Image("logo")
                 .resizable()
                 .scaledToFit()
@@ -43,9 +42,7 @@ struct LoginView: View {
                     .onChange(of: email){ _ in
                         enablebuttons()
                     }
-                
-                
-                
+            
                 SecureField("password", text: $password)
                     .textInputAutocapitalization(.never)
                     .submitLabel(.done)
@@ -85,12 +82,12 @@ struct LoginView: View {
             .tint(Color("snackColor"))
             .font(.title2)
             .padding(.top)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(for: String.self){ view in
-                if view == "ListView"{
-                    ListView()
-                }
-            }
+//            .navigationBarTitleDisplayMode(.inline)
+//            .navigationDestination(for: String.self){ view in
+//                if view == "ListView"{
+//                    ListView()
+//                }
+//            }
         }// nav stack
         .alert(alertMessage, isPresented: $showingAlert){
             Button("OK",role:.cancel){
@@ -102,9 +99,12 @@ struct LoginView: View {
             // if logged in when the app runs, navigate to the new screen
             if Auth.auth().currentUser != nil {
                 print ("🪵 Login successful !")
-                path.append("ListView")
+               presentSheet = true
                 
             }
+        }
+        .fullScreenCover(isPresented: $presentSheet){
+            ListView()
         }
         
     }
@@ -126,10 +126,13 @@ struct LoginView: View {
                 print("🤬 Error: SIGN-UP Error:\(error.localizedDescription)")
                 alertMessage = "SIGN-UP Error:\(error.localizedDescription)"
                 showingAlert = true
+                // mayhbe
             }
             else{
                 print ("😎 Registration success!")
                 /// load list view
+                         presentSheet = true
+
             }
         }
     }
@@ -144,7 +147,7 @@ struct LoginView: View {
             }
             else{
                 print ("🪵 Login successful !")
-                path.append("ListView")
+                presentSheet = true
                 /// load list view
             }
         }
