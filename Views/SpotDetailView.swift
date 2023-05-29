@@ -38,9 +38,8 @@ struct SpotDetailView: View {
     // this is to keep track of what button is pressed
     @State private var buttonPressed = ButtonPressed.review
     @State private var uiImageSelected = UIImage()
-
+// For sheets
     @State private var showPhotoSheet = false
-
     @State private var  showReviewViewSHeet = false
     @State private var showPlaceLookupSheet = false
     @State private var showSaveAlert = false
@@ -68,8 +67,8 @@ struct SpotDetailView: View {
             .disabled(spot.id == nil ? false : true )
             .textFieldStyle (.roundedBorder)
                 .overlay {
-                RoundedRectangle (cornerRadius: 5)
-                .stroke(.gray.opacity(0.5), lineWidth: spot.id == nil ? 2 : 0)
+    RoundedRectangle (cornerRadius: 5)
+    .stroke(.gray.opacity(0.5), lineWidth: spot.id == nil ? 2 : 0)
             }
     .padding(.horizontal)
             
@@ -176,7 +175,6 @@ struct SpotDetailView: View {
         .onAppear{
             // to retrieve images from the corrrect collection
             if !previewRunning  && spot.id != nil {
-
                 $reviews.path = "spots/\(spot.id ?? "")/reviews"
                 print("reviews.path = \($reviews.path)")
 
@@ -195,7 +193,7 @@ struct SpotDetailView: View {
                 mapRegion = MKCoordinateRegion(center: locationManager.location?.coordinate  ?? CLLocationCoordinate2D(), latitudinalMeters: regionSize, longitudinalMeters: regionSize)
             }
         }
-            // allows us for us to plot something on the map
+        // allows us for us to plot something on the map
             annotations = [Annotation(name: spot.name, address: spot.address, coordinate: spot.coordinate)]
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -267,6 +265,7 @@ struct SpotDetailView: View {
                             // if we didnt update the path after saving a spot we wouldnt be able to see the new reviews added
                         $reviews.path = "spots/\(spot.id ?? "")/reviews"
                         $photos.path = "spots/\(spot.id ?? "")/photos"
+                           
                             switch buttonPressed {
                             case .review :
                                 showReviewViewSHeet.toggle()

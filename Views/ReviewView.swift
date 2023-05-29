@@ -30,8 +30,8 @@ struct ReviewView: View {
             .padding(.horizontal)
             .frame(maxWidth: .infinity, alignment: .leading)
             Text(rateOrReviewString)
-            .font (postedByThisUser ? .title2 : .subheadline)
-                .bold (postedByThisUser)
+            .font(postedByThisUser ? .title2 : .subheadline)
+                .bold(postedByThisUser)
                 .minimumScaleFactor (0.5)
                 .lineLimit(1)
                 .padding(.horizontal)
@@ -78,7 +78,7 @@ struct ReviewView: View {
                 postedByThisUser = true
             }else {
                 
-                let reviewPostedOn = review.postedOn.formatted(date:.numeric,time:.omitted)
+        let reviewPostedOn = review.postedOn.formatted(date:.numeric,time:.omitted)
                 rateOrReviewString = "By:\(review.reviewer) on:\(reviewPostedOn)"
             }
         }

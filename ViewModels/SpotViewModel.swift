@@ -46,7 +46,6 @@ class SpotViewModel: ObservableObject {
 func saveImage(spot: Spot,photo: Photo,image: UIImage) async -> Bool {
         guard let spotID = spot.id else {
             print("🤬 ERROR: Spot ID == nil")
-
             return false
         }
         
@@ -98,7 +97,7 @@ func saveImage(spot: Spot,photo: Photo,image: UIImage) async -> Bool {
         do {//
             var newPhoto = photo
             //allows us to display the image
-            newPhoto.imageUrlString = imageURLString
+            newPhoto.imageURLString = imageURLString
             
     // updating the database with the meta data of the photo
     // instead of using the .addDocument func use the .document() and plug in the document we already have

@@ -12,12 +12,12 @@ import FirebaseFirestoreSwift
 
 struct Photo : Identifiable,Codable{
     @DocumentID var id: String?
-    var imageUrlString = ""
+    var imageURLString = ""
     var description = ""
     var reviewer = Auth.auth().currentUser?.email ?? ""
     var postedOn = Date()
     var dictionary : [String: Any]{
-        return[ "imageUrlString" : imageUrlString,"description" :  description,
+        return[ "imageURLString" : imageURLString,"description" :  description,
                 "reviewer" : reviewer, "Posted" : Timestamp(date: Date())]
     }
 

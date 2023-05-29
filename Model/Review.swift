@@ -6,8 +6,13 @@
 //
 
 import Foundation
-import FirebaseFirestoreSwift
 import Firebase
+import FirebaseCore
+import FirebaseFirestoreSwift
+import SwiftUI
+import MapKit
+import PhotosUI
+import WeatherKit
 
 struct Review : Identifiable, Codable{
     @DocumentID var id: String?
